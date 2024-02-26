@@ -1,0 +1,116 @@
+ex.1
+
+let a = 18;
+let b = 2;
+
+if(a % b == 0 || b % a == 0){
+    console.log('1')
+}else{
+    console.log('0')
+}
+
+----------------------------------------------------
+ex.2
+
+let sum = 180;
+let a = 90;
+let b = 25;
+let c = sum - a - b 
+
+
+if(a >= sum || b >= sum || c >= sum){
+    console.log('false')
+}else if(a < 0 || b < 0 || c < 0){
+    console.log('false')
+}else{
+    console.log(c)
+}
+
+-----------------------------------------------------
+ex. 3
+
+let num = 98;
+let lastDigit = num % 10;
+num1 = (num - lastDigit) / 10
+
+if(lastDigit == 0 || num < 10){
+    console.log(num)
+}else{
+    console.log(lastDigit * 10 + num1)
+}
+-----------------------------------------------------   
+ex. 4
+
+let a = 5;
+let b = 25;
+let c = -12;
+let d = 0;
+let e = 8;
+
+let num = (a + b + C + d + e) / 5
+console.log(num)
+
+-----------------------------------------------------
+ex. 5
+
+let num = 420;
+let a = 3;
+let b = 5;
+let c = 7;
+
+if(num % a == 0 && num % b == 0 && num % c == 0){
+    console.log(num + 'is a multiple of' + a, + b + 'and' + c)
+}else if(num % a == 0 && num % b == 0){
+    console.log(num + 'is a multiple of' + a + 'and' + b)
+}else if(num % b == 0 && num % c == 0){
+    console.log(num + 'is a multiple of' + b + 'and' + c)
+}else if(num % a == 0 && num % c == 0){
+    console.log(num + 'is a multiple of' + a + 'and' + c)
+}else if(num % a == 0){
+    console.log(num + 'is a multiple of' + a)
+}else if(num % b == 0){
+     console.log(num + 'is a multiple of' + b)
+}else if(num % c == 0){
+    console.log(num + 'is a multiple of' + c)
+}else{
+    console.log(num + 'is not a multiple of' + a, + b + 'and' + c)
+}
+
+-------------------------------------------------------
+ex. 6
+
+let a = 2;
+let b = 9;
+let c = 10;
+
+if(a == 0 || b == 0 || c == 0){
+    console.log('unsigned')
+}else if(a < 0 && b < 0 && c < 0){
+    console.log('-')
+}else if((a < 0 && b < 0) || (b < 0 && c < 0) || (a < 0 && c < 0)){
+    console.log('+')
+}else if(a > 0 && b > 0 && c > 0){
+    console.log('+')
+}else{
+    console.log('-')
+}
+
+------------------------------------------------------
+ex. 7
+
+let num = 54699;
+let digit = 5;
+
+    while(num){
+    lastDigit = num % 10;
+    
+    
+    if(digit == lastDigit){
+    console.log('yes')
+    }else{
+    console.log('no')
+    } 
+    
+}
+   
+
